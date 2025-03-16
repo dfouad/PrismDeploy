@@ -43,7 +43,11 @@ class Centers(models.Model):
 
 
 class Courses(models.Model):
-
+  type = (
+        ("Online Course","Online"),
+        ("On-Site Course","Offline"),
+    )
+  
   name          = models.CharField(max_length=50,null=True)
   description   = models.TextField(max_length=200,null=True)
   level         = models.IntegerField(max_length=5,null=True)
@@ -52,6 +56,9 @@ class Courses(models.Model):
   minAge        = models.IntegerField(max_length=10,null=True)
   maxNmberofstudents        = models.IntegerField(max_length=20,null=True)
   status        = models.CharField(max_length=50,null=True)
+  CourseStatus = models.CharField(max_length=50,choices=type,null=True)
+  image         = models.ImageField(null=True,blank=True)
+  is_active     = models.BooleanField(default=False)
 
   def __str__(self):
         return self.name    
