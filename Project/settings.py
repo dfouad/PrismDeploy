@@ -140,3 +140,6 @@ GRAPH_MODELS = {
   'all_applications': True,
   'group_models': True,
 }
+
+
+ALLOWED_HOSTS = ['192.168.1.50']
