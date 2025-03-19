@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'AdminPanel',
     'Students',
     'common_App',
-    'django_extensions',
+   # 'django_extensions',
 ]
 
 MIDDLEWARE = [
