@@ -43,15 +43,33 @@ class Centers(models.Model):
 
 
 class Courses(models.Model):
-
+  type = (
+        ("Online Course","Online"),
+        ("On-Site Course","Offline"),
+    )
+  age  = (
+          ("5-7","5-7"),
+          ("7-9","7-9"),
+          ("9-11","9-11"),
+          ("11-13","11-13"),
+        )
+  category = (
+               ("Programming","Programming"),
+               ("Robotics","Robotics"),
+               ("Strong Mind","Strong Mind"),
+      
+             )
   name          = models.CharField(max_length=50,null=True)
   description   = models.TextField(max_length=200,null=True)
   level         = models.IntegerField(max_length=5,null=True)
   price         = models.IntegerField(max_length=10,null=True)
   kitId         = models.OneToOneField(ToolKit,null=True,blank=True,on_delete=models.CASCADE)
-  minAge        = models.IntegerField(max_length=10,null=True)
   maxNmberofstudents        = models.IntegerField(max_length=20,null=True)
-  status        = models.CharField(max_length=50,null=True)
+  CourseStatus = models.CharField(max_length=50,choices=type,null=True)
+  age = models.CharField(max_length=50,choices=age,null=True)
+  category = models.CharField(max_length=50,choices=category,null=True)
+  image         = models.ImageField(null=True,blank=True)
+  is_active     = models.BooleanField(default=False)
 
   def __str__(self):
         return self.name    
