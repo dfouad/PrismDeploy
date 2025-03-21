@@ -3,8 +3,9 @@ from common_App.models import Courses
 
 
 def courses(request):
-    all_courses=Courses.objects.filter(is_active =True)
-    context={'coursesList':all_courses}
+    active_courses=Courses.objects.filter(is_active = "Active Now")
+    soon_courses=Courses.objects.filter(is_active = "Coming Soon")
+    context={'activecoursesList':active_courses,'sooncoursesList':soon_courses}
     return render (request,'studentsapp/courses.html',context)
 
 
