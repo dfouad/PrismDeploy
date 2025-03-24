@@ -141,6 +141,9 @@ GRAPH_MODELS = {
   'group_models': True,
 }
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 #ALLOWED_HOSTS = ['192.168.1.50']
+=======
+>>>>>>> 5630d1ea42bad47ac3373787b2dc517d3ec89ded
