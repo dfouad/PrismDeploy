@@ -13,3 +13,15 @@ def courseDetails(request,course_id):
     course_details=Courses.objects.get(id=course_id)
     context={'course':course_details}
     return render (request,'studentsapp/courseDetails.html',context)
+
+
+def courseByAge(request,course_age):
+    filtered_courses_by_age = Courses.objects.filter(age=course_age)
+    context= {'filtered_courses_by_age': filtered_courses_by_age}
+    return render(request,'studentsapp/filteredCourses.html',context )
+
+
+def courseByCategory(request,course_category):
+    filtered_courses_by_category = Courses.objects.filter(category=course_category)
+    context= {'filtered_courses_by_category': filtered_courses_by_category}
+    return render(request,'studentsapp/filteredCourses.html',context )

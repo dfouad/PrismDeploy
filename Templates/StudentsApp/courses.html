@@ -39,6 +39,26 @@
         <h1 class="mb-3">Courses by Prism Academy</h1>
         <p>Our fun and interactive courses are designed to spark creativity and problem-solving skills. Explore our courses below and start your child's journey today!".</p>
       </div>
+
+      <div class="nav-item dropdown" >
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cources By age </a>
+        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+            <a href="{% url 'courseByAge' '5-7' %}" class="dropdown-item">Cources from 5-7</a>
+            <a href="{% url 'courseByAge' '7-9' %}" class="dropdown-item">Cources from 7-9</a>
+            <a href="{% url 'courseByAge' '9-11' %}" class="dropdown-item">Cources from 9-11</a>
+            <a href="{% url 'courseByAge' '11-13' %}" class="dropdown-item">Cources from 11-13</a>
+        </div>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cources Category </a>
+        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+            <a href="{% url 'courseByCategory' 'Programming' %}" class="dropdown-item">Programming</a>
+            <a href="{% url 'courseByCategory' 'Robotics' %}" class="dropdown-item">Robotics</a>
+            <a href="{% url 'courseByCategory' 'Strong Mind' %}" class="dropdown-item">Strong Mind</a>
+        </div>
+      </div>     
+
       <div class="row g-4">
         {% for course in activecoursesList %}
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
