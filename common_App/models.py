@@ -51,7 +51,7 @@ class Courses(models.Model):
           ("5-7","5-7"),
           ("7-9","7-9"),
           ("9-11","9-11"),
-          ("11-13","11-13"),
+          ("11+","11+"),
         )
   category = (
                ("Programming","Programming"),
@@ -60,7 +60,12 @@ class Courses(models.Model):
       
              )
   name          = models.CharField(max_length=50,null=True)
-  description   = models.TextField(max_length=200,null=True)
+  description   = models.TextField(max_length=400,null=True)
+  course_overview   = models.TextField(max_length=400,null=True)
+  what_you_will_learn = models.TextField(max_length=800,null=True)
+  requirments   = models.TextField(max_length=200,null=True)
+  course_duration   = models.TextField(max_length=200,null=True)
+  session_duration  = models.TextField(max_length=  200,null=True)
   level         = models.IntegerField(max_length=5,null=True)
   price         = models.IntegerField(max_length=10,null=True)
   kitId         = models.OneToOneField(ToolKit,null=True,blank=True,on_delete=models.CASCADE)
