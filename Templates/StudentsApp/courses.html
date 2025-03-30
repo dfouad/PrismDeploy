@@ -16,21 +16,56 @@
       </nav>
     </div>
   </div>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .badge {
+      background-color: red;
+      color: white;
+      padding: 4px 8px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    </style>
   <!-- Page Header End -->
 
   <!-- Classes Start -->
   <div class="container-xxl py-5">
     <div class="container">
       <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-        <h1 class="mb-3">Courses by Prism</h1>
+        <h1 class="mb-3">Courses by Prism Academy</h1>
         <p>Our fun and interactive courses are designed to spark creativity and problem-solving skills. Explore our courses below and start your child's journey today!".</p>
       </div>
+
+      <div class="nav-item dropdown" >
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses By Age </a>
+        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+            <a href="{% url 'courseByAge' '5-7' %}" class="dropdown-item">Cources from 5-7</a>
+            <a href="{% url 'courseByAge' '7-9' %}" class="dropdown-item">Cources from 7-9</a>
+            <a href="{% url 'courseByAge' '9-11' %}" class="dropdown-item">Cources from 9-11</a>
+            <a href="{% url 'courseByAge' '11-13' %}" class="dropdown-item">Cources from 11-13</a>
+        </div>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses By Category </a>
+        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+            <a href="{% url 'courseByCategory' 'Programming' %}" class="dropdown-item">Programming</a>
+            <a href="{% url 'courseByCategory' 'Robotics' %}" class="dropdown-item">Robotics</a>
+            <a href="{% url 'courseByCategory' 'Strong Mind' %}" class="dropdown-item">Strong Mind</a>
+        </div>
+      </div>     
+
       <div class="row g-4">
-        {% for course in coursesList %}
+        {% for course in activecoursesList %}
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="classes-item">
               <div class="bg-light rounded-circle w-75 mx-auto p-3">
                 <img class="img-fluid rounded-circle" src="{{ course.image.url }}" alt="" />
+                
               </div>
               <div class="bg-light rounded p-4 pt-5 mt-n5">
                 <a class="d-block text-center h3 mt-3 mb-4" href="">{{course.name}}</a>
@@ -39,6 +74,8 @@
                     <div class="ms-3">
                       <h6 class="text-primary mb-1">{{course.CourseStatus}}</h6>
                       <small>{{course.price}} egp</small>
+                      <br>
+                      <small><p style="color:orange;">{{course.is_active}}</p></small>
                     </div>
                   </div>
                   <a class="bg-primary text-white rounded-pill py-2 px-3" href="{% url 'courseDetails' course.id %}">Details</a>
@@ -47,7 +84,7 @@
                   <div class="col-4">
                     <div class="border-top border-3 border-primary pt-2">
                       <h6 class="text-primary mb-1">Age:</h6>
-                      <small>{{course.minAge}}+</small>
+                      <small>{{course.age}}</small>
                     </div>
                   </div>
                   <div class="col-4">
@@ -67,6 +104,50 @@
             </div>
           </div>
         {% endfor %}
+
+        {% for course in sooncoursesList %}
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="classes-item">
+            <div class="bg-light rounded-circle w-75 mx-auto p-3" >
+              <span class="badge"> Coming Soon</span>
+              <img class="img-fluid rounded-circle" src="{{ course.image.url }}" alt="" />
+            </div>
+            <div class="bg-light rounded p-4 pt-5 mt-n5">
+              <a class="d-block text-center h3 mt-3 mb-4" href="">{{course.name}}</a>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="d-flex align-items-center">
+                  <div class="ms-3">
+                    <h6 class="text-primary mb-1">{{course.CourseStatus}}</h6>
+                    <small>{{course.price}} egp</small>
+                  </div>
+                </div>
+                <a class="bg-primary text-white rounded-pill py-2 px-3" href="{% url 'courseDetails' course.id %}">Details</a>
+              </div>
+              <div class="row g-1">
+                <div class="col-4">
+                  <div class="border-top border-3 border-primary pt-2">
+                    <h6 class="text-primary mb-1">Age:</h6>
+                    <small>{{course.age}}</small>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="border-top border-3 border-success pt-2">
+                    <h6 class="text-success mb-1">Hours:</h6>
+                    <small>48 hours</small>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="border-top border-3 border-warning pt-2">
+                    <h6 class="text-warning mb-1">Duration:</h6>
+                    <small>3 Month</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
       </div>
     </div>
   </div>

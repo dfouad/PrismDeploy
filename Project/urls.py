@@ -21,8 +21,9 @@ from django.conf import settings # type: ignore
 from django.conf.urls.static import static
 
 urlpatterns = [
+   
     path('admin/', admin.site.urls),
-    path('adminpanel/', include('AdminPanel.urls')),
+    path('', include('AdminPanel.urls')),
     path('students/', include('Students.urls')),
      path('', include('common_App.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -59,6 +59,11 @@ class Courses(models.Model):
                ("Strong Mind","Strong Mind"),
       
              )
+  
+  is_active =( ("Active Now","Active Now"),
+               ("Coming Soon","Coming Soon"),
+      
+        )
   name          = models.CharField(max_length=50,null=True)
   description   = models.TextField(max_length=400,null=True)
   course_overview   = models.TextField(max_length=400,null=True)
@@ -74,7 +79,7 @@ class Courses(models.Model):
   age = models.CharField(max_length=50,choices=age,null=True)
   category = models.CharField(max_length=50,choices=category,null=True)
   image         = models.ImageField(null=True,blank=True)
-  is_active     = models.BooleanField(default=False)
+  is_active     = models.CharField(max_length=50,choices=is_active,null=True)
 
   def __str__(self):
         return self.name    
