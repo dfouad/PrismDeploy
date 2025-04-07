@@ -12,7 +12,7 @@ def courses(request):
 def courseDetails(request,course_id):
     course_details=Courses.objects.get(id=course_id)
     context={'course':course_details}
-    return render (request,'StudentsApp/courseDetails.html',context)
+    return render (request,'StudentsApp/CourseDetails.html',context)
 
 
 def courseByAge(request,course_age):
