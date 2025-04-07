@@ -33,8 +33,11 @@
 
                             <p class="mb-4">
                                 <h5 class="mb-4">Course Overview</h5>
-                                <ul>
-                                    {{course.course_overview}}
+                                <ul style="list-style-type: square;">
+                                    {% for line in course.course_overview.splitlines %}
+                                <li>  {{line}} <br></li>
+                                {% endfor%}
+                                    
                                   </ul>
                             </p>
                             <p class="mb-4">
@@ -53,6 +56,21 @@
                                 <br>
                                 
                             </p>
+
+                            <p class="mb-4">
+                                <h5 class="mb-4">Duration:</h5>
+                                
+                                  {{course.course_duration}} <br>
+                                  {{course.session_duration}} <br>
+                               
+                               
+                                <br>
+                                
+                            </p>
+
+
+
+
                         </p>
                         
                         <div class="row g-4 align-items-center">
