@@ -8,6 +8,9 @@ def courses(request):
     context={'activecoursesList':active_courses,'sooncoursesList':soon_courses}
     return render (request,'StudentsApp/courses.html',context)
 
+def StudentApplication(request,course_id):
+    
+    return render (request,'StudentsApp/ApplicationForm.html')
 
 def courseDetails(request,course_id):
     course_details=Courses.objects.get(id=course_id)
