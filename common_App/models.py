@@ -124,7 +124,8 @@ class Student(models.Model):
     parentContact = models.IntegerField(max_length=15,null=True)
     address       = models.TextField(max_length=200,null=True)
     studentID     = models.IntegerField(max_length=15,null=True)
-    course        = models.ManyToManyField(OngoingCourses)
+    #course        = models.ManyToManyField(OngoingCourses)
+    course        = models.ManyToManyField(Courses)
 
 
     def __str__(self):

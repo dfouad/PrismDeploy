@@ -1,5 +1,12 @@
 from django.shortcuts import render
-from common_App.models import Courses
+
+from .forms import StudentForm
+from django.shortcuts import get_object_or_404
+from common_App.models import Courses, OngoingCourses
+from django.http import HttpResponse, HttpResponseRedirect
+#from django.urls import reverse
+from common_App.models import *
+
 
 
 def courses(request):
@@ -8,10 +15,22 @@ def courses(request):
     context={'activecoursesList':active_courses,'sooncoursesList':soon_courses}
     return render (request,'StudentsApp/courses.html',context)
 
-def StudentApplication(request,course_id):
-    
-    return render (request,'StudentsApp/ApplicationForm.html')
 
+def StudentApplication(request, course_id):
+    course_instance = get_object_or_404(Courses, id=course_id)
+    
+    if request.method == 'POST':
+        form = StudentForm(request.POST, course_instance=course_instance)
+        if form.is_valid():
+            student = form.save()
+            return redirect('success_page')  # Replace with your real redirect
+    else:
+        form = StudentForm(course_instance=course_instance)
+
+    return render(request, 'StudentsApp/ApplicationForm.html', {
+        'form': form,
+        'selected_course': course_instance, 
+    })
 def courseDetails(request,course_id):
     course_details=Courses.objects.get(id=course_id)
     context={'course':course_details}

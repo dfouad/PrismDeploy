@@ -1,74 +1,92 @@
-
 {% extends 'Main.html' %}
 {% load static %}
 
 {% block content1 %}
+<!-- Appointment Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="bg-light rounded">
+            <div class="row g-0">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="h-100 d-flex flex-column justify-content-center p-5">
+                        <h1 class="mb-4">Student Application</h1>
 
 
-      
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="row g-3">
 
-        <!-- Appointment Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="bg-light rounded">
-                    <div class="row g-0">
-                        <div class="col-lg-1"></div>
-                        <div class="col-lg-10 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4">Student Application</h1>
-                                <form>
-                                    <div class="row g-3">
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                                <label for="gname">Student's Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <select  class="form-control border-0" id="course" >
-                                                    <option value="">All Subjects</option>
-                                                    <option value="Python">Python</option>
-                                                    <option value="Scratch">Scratch</option>
-                                                  </select>
-                                                <label for="course">Course</label>                                                  
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Child Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
-                                                <label for="cage">Child Age</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                                <label for="message">Message</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
-                                        </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        {{ form.name }}
+                                        <label for="{{ form.name.id_for_label }}">Student Name</label>
                                     </div>
-                                </form>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        {{ form.phone }}
+                                        <label for="{{ form.phone.id_for_label }}">Phone Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        {{ form.dateofbirth }}
+                                        <label for="{{ form.dateofbirth.id_for_label }}">Date of Birth</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        {{ form.school }}
+                                        <label for="{{ form.school.id_for_label }}">School</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        {{ form.grade }}
+                                        <label for="{{ form.grade.id_for_label }}">Grade</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        {{ form.parentContact }}
+                                        <label for="{{ form.parentContact.id_for_label }}">Parent Contact</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        {{ form.address }}
+                                        <label for="{{ form.address.id_for_label }}">Address</label>
+                                    </div>
+                                </div>
+
+                                <!-- Course dropdown - now visible but pre-selected -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        {{ form.course }}
+                                        <label for="{{ form.course.id_for_label }}">Course (you can change if needed)</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                </div>
+
                             </div>
-                        </div>
-                       
+                        </form>
+
                     </div>
                 </div>
+                <div class="col-lg-1"></div>
             </div>
         </div>
-        <!-- Appointment End -->
-
-        {% endblock content1 %} 
- 
-
-
-
+    </div>
+</div>
+<!-- Appointment End -->
+{% endblock content1 %}
