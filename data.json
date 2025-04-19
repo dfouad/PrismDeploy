@@ -1,0 +1,1725 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "common_App",
+        "model": "ongoingcourses"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "common_App",
+        "model": "centers"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "common_App",
+        "model": "component"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "common_App",
+        "model": "instractor"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "common_App",
+        "model": "toolkit"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "common_App",
+        "model": "courses"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "common_App",
+        "model": "student"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "33ojsohqbb0p8v3lkcewvsxsrz86uu21",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pCBCgwu3fcMhIGpVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hzuIilDj9bhTTg-sO8j3WW5Op1XWZSe6KPGiXY8v8vB7u30GJvXxrcBq150E5wARMGMlPbBAMZXbWDJjTAMpaT4oVotXoJtJnzGicJhDvD8YgNvY:1tvDFH:KxhgwuefI5jN96YVr9zYiSxxDq1cpkvv1L35z2HVQq4",
+        "expire_date": "2025-04-03T10:35:27.911Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6296yerzjg7xl7rjv1oo6johs9hpg7rl",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAoAxSX7nsGMsxQqRqalHZlvLtt0oVu33v_v0XEbS1xa3mJE4ur0OLyyxLSM9dD8APrfZY013WZkjwSedomh5nz63a2fwcFW9nXGDrH3gGhSmjtSNijcTQGzDsC5SEFH8AYbWxWyVHgDJqxC6B1T158vvWmN_k:1u5mg5:cPMoCA7hS8JneeXeBaSFO9JGDEWEt0w3pPRmiJiX6xQ",
+        "expire_date": "2025-05-02T14:26:49.369Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "e24rj7iclnshpjdq1ekwv00b39g77kka",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pCBCgwu3fcMhIGpVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hzuIilDj9bhTTg-sO8j3WW5Op1XWZSe6KPGiXY8v8vB7u30GJvXxrcBq150E5wARMGMlPbBAMZXbWDJjTAMpaT4oVotXoJtJnzGicJhDvD8YgNvY:1tvDFE:CrW3vgS7k9dcA8Mc7F_MOP0qW5cyXibhs8VcCTNykHM",
+        "expire_date": "2025-04-03T10:35:24.380Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "g5qjuap0tcso9sbq4oqbqzhxot6nu5mt",
+    "fields": {
+        "session_data": ".eJxVjDkOwjAQRe_iGlnxMl4o6TmDNeMFB5AtxUmFuDtESgHtf-_9Fwu4rTVsIy9hTuzMJDv9boTxkdsO0h3brfPY27rMxHeFH3Twa0_5eTncv4OKo35rO1GhKeVcrDGowESrohSAVlACpyMZBPDkpBHknS4lgpaoPfqiAD17fwDzWzgQ:1tupyC:QafppBzzS_MLnJOAzJCatNOZGvzhPti73nEgSiYnIb4",
+        "expire_date": "2025-04-02T09:44:16.501Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "iu10cz5cdudztktqvz9vw39ksoxwrils",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pCBCgwu3fcMhIGpVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hzuIilDj9bhTTg-sO8j3WW5Op1XWZSe6KPGiXY8v8vB7u30GJvXxrcBq150E5wARMGMlPbBAMZXbWDJjTAMpaT4oVotXoJtJnzGicJhDvD8YgNvY:1tvDFG:77fFNr-BLovz7UD79dvSk3wtSsbzrDsG0h43kiqewEU",
+        "expire_date": "2025-04-03T10:35:26.059Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "l65dqxqbimag9rzykfxctt0bkjr5tu5r",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgMIJL9z0DGZhBqoYmpV0Z765NutDtf-_9l4i4rTVunZc4kbgILU6_W8L84LYDumO7zTLPbV2mJHdFHrTLcSZ-Xg_376Bir9_aJI8EKQ0OqXiL4BUwknZsXSigcgHjzoFVsaSzG0LWyFpZCw7IaCPeH_h4N8o:1u5mg2:zUT0hGHpjstXYaaCHsyiWbjsdnzxp8IF5hi0hi5Fex4",
+        "expire_date": "2025-05-02T14:26:46.214Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "n928nubrhvlzzxfdar9erex58gh83k8a",
+    "fields": {
+        "session_data": "ZDM0ZTZlZWYyOTAzZDJmYmMzZTY2NzE2ZmNjOGU1MTFlN2NjMzRkYTp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyM2ZjZmZhMGNiMTQ0YmU5Y2MwOWM5NDViYTc4NDVmY2JiNmY0NzRiIn0=",
+        "expire_date": "2025-04-29T07:13:50.108Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "p0zqei99ynfbvwgq0crmi3if8qyr48gf",
+    "fields": {
+        "session_data": ".eJxVjDkOwjAQRe_iGlnxMl4o6TmDNeMFB5AtxUmFuDtESgHtf-_9Fwu4rTVsIy9hTuzMJDv9boTxkdsO0h3brfPY27rMxHeFH3Twa0_5eTncv4OKo35rO1GhKeVcrDGowESrohSAVlACpyMZBPDkpBHknS4lgpaoPfqiAD17fwDzWzgQ:1trwD3:u769oCkuyICKWFZtGUW-LZWamMCjNxW_p_8-J-t4Nic",
+        "expire_date": "2025-03-25T09:47:37.624Z"
+    }
+},
+{
+    "model": "common_App.courses",
+    "pk": 1,
+    "fields": {
+        "name": "Robotics",
+        "description": "good course for kids",
+        "course_overview": "a",
+        "what_you_will_learn": "a",
+        "requirments": "a",
+        "course_duration": "a",
+        "session_duration": "a",
+        "level": 1,
+        "price": 800,
+        "kitId": null,
+        "maxNmberofstudents": 10,
+        "CourseStatus": "On-Site Course",
+        "age": "9-11",
+        "category": "Robotics",
+        "image": "arduino_lYj3dwk.jpg",
+        "is_active": "Active Now"
+    }
+},
+{
+    "model": "common_App.courses",
+    "pk": 2,
+    "fields": {
+        "name": "Python",
+        "description": "very good course",
+        "course_overview": "a",
+        "what_you_will_learn": "a",
+        "requirments": "a",
+        "course_duration": "a",
+        "session_duration": "a",
+        "level": 1,
+        "price": 600,
+        "kitId": null,
+        "maxNmberofstudents": 3,
+        "CourseStatus": "Online Course",
+        "age": "5-7",
+        "category": "Programming",
+        "image": "Python.png",
+        "is_active": "Coming Soon"
+    }
+},
+{
+    "model": "common_App.courses",
+    "pk": 3,
+    "fields": {
+        "name": "Scratch",
+        "description": "A Scratch course is designed to introduce beginners, especially children and young learners, to the fundamentals of programming through a visual, block-based coding environment in a fun and interactive way. The course focuses on creativity, problem-solving, and computational thinking. Scratch allows users to create animations, games, stories, and more by dragging and dropping code blocks.",
+        "course_overview": "This course is designed for Children (Ages 5+) and beginners with no prior coding experience.\r\nThis course will teach students how to understand the Scratch editor, including the stage, sprites, and blocks palette.\r\nBy the end of the course, students will be able to create simple animation, games and stories.",
+        "what_you_will_learn": "Understand the Basics of Programming:\r\nLearn fundamental programming concepts like sequencing, loops, conditionals, and variables.\r\nGain familiarity with the Scratch interface and its tools.\r\nDevelop Computational Thinking:\r\nBreak down problems into smaller, manageable parts.\r\nDesign algorithms to solve problems.\r\nCreate Interactive Projects:\r\nBuild animations, games, and stories using Scratch.\r\nUse sprites, backdrops, sounds, and motion to bring ideas to life.\r\nLearn Collaboration and Sharing:\r\nShare projects with the Scratch online community.\r\nExplore and remix projects created by others.\r\nFoster Creativity and Problem-Solving:\r\nExperiment with new ideas and solutions.\r\nDebug and refine projects to improve functionality.",
+        "requirments": "Computer or Tablet.",
+        "course_duration": "12-16 weeks",
+        "session_duration": "60 minutes",
+        "level": 1,
+        "price": 450,
+        "kitId": null,
+        "maxNmberofstudents": 8,
+        "CourseStatus": "Online Course",
+        "age": "9-11",
+        "category": "Programming",
+        "image": "scratch.png",
+        "is_active": "Active Now"
+    }
+},
+{
+    "model": "common_App.courses",
+    "pk": 4,
+    "fields": {
+        "name": "mobile application",
+        "description": "Mobile Application Development Course with App Inventor is an excellent way to introduce students to the world of app development. App Inventor, developed by MIT, is a block-based programming tool that allows users to create fully functional Android apps without needing to write complex code.",
+        "course_overview": "This course is designed for ages( 10-15) with no prior programming experience needed.\r\nThis course will teach students how to design, build, and test mobile apps using App Inventor. By the end of the course, students will have a portfolio of apps they’ve created and a solid understanding of app development concepts.",
+        "what_you_will_learn": "Learn the basics of app development and user interface (UI) design.\r\nUnderstand programming logic using block-based coding.\r\nExplore advanced features like sensors, databases, and APIs.\r\nBuild and publish real-world apps.\r\nDevelop problem-solving and critical thinking skills.",
+        "requirments": "Computer.\r\nAndroid Device .\r\nGoogle Account.",
+        "course_duration": "12-16 weeks (1session per week)",
+        "session_duration": "Each session: 60 minutes",
+        "level": 1,
+        "price": 600,
+        "kitId": null,
+        "maxNmberofstudents": 8,
+        "CourseStatus": "Online Course",
+        "age": "11+",
+        "category": "Programming",
+        "image": "appinventor_logo.png",
+        "is_active": "Active Now"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add ongoing courses",
+        "content_type": [
+            "common_App",
+            "ongoingcourses"
+        ],
+        "codename": "add_ongoingcourses"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change ongoing courses",
+        "content_type": [
+            "common_App",
+            "ongoingcourses"
+        ],
+        "codename": "change_ongoingcourses"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete ongoing courses",
+        "content_type": [
+            "common_App",
+            "ongoingcourses"
+        ],
+        "codename": "delete_ongoingcourses"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view ongoing courses",
+        "content_type": [
+            "common_App",
+            "ongoingcourses"
+        ],
+        "codename": "view_ongoingcourses"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add centers",
+        "content_type": [
+            "common_App",
+            "centers"
+        ],
+        "codename": "add_centers"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change centers",
+        "content_type": [
+            "common_App",
+            "centers"
+        ],
+        "codename": "change_centers"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete centers",
+        "content_type": [
+            "common_App",
+            "centers"
+        ],
+        "codename": "delete_centers"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view centers",
+        "content_type": [
+            "common_App",
+            "centers"
+        ],
+        "codename": "view_centers"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add component",
+        "content_type": [
+            "common_App",
+            "component"
+        ],
+        "codename": "add_component"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change component",
+        "content_type": [
+            "common_App",
+            "component"
+        ],
+        "codename": "change_component"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete component",
+        "content_type": [
+            "common_App",
+            "component"
+        ],
+        "codename": "delete_component"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view component",
+        "content_type": [
+            "common_App",
+            "component"
+        ],
+        "codename": "view_component"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add instractor",
+        "content_type": [
+            "common_App",
+            "instractor"
+        ],
+        "codename": "add_instractor"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change instractor",
+        "content_type": [
+            "common_App",
+            "instractor"
+        ],
+        "codename": "change_instractor"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete instractor",
+        "content_type": [
+            "common_App",
+            "instractor"
+        ],
+        "codename": "delete_instractor"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view instractor",
+        "content_type": [
+            "common_App",
+            "instractor"
+        ],
+        "codename": "view_instractor"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add tool kit",
+        "content_type": [
+            "common_App",
+            "toolkit"
+        ],
+        "codename": "add_toolkit"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change tool kit",
+        "content_type": [
+            "common_App",
+            "toolkit"
+        ],
+        "codename": "change_toolkit"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete tool kit",
+        "content_type": [
+            "common_App",
+            "toolkit"
+        ],
+        "codename": "delete_toolkit"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view tool kit",
+        "content_type": [
+            "common_App",
+            "toolkit"
+        ],
+        "codename": "view_toolkit"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add courses",
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "codename": "add_courses"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change courses",
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "codename": "change_courses"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete courses",
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "codename": "delete_courses"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view courses",
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "codename": "view_courses"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add student",
+        "content_type": [
+            "common_App",
+            "student"
+        ],
+        "codename": "add_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change student",
+        "content_type": [
+            "common_App",
+            "student"
+        ],
+        "codename": "change_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete student",
+        "content_type": [
+            "common_App",
+            "student"
+        ],
+        "codename": "delete_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view student",
+        "content_type": [
+            "common_App",
+            "student"
+        ],
+        "codename": "view_student"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$IySHzav9UPkxzNukYUdRX7$8cwGU6Vu/DBe26H9hPj7OmUjDPQmfDWXY+k3JI9RI2c=",
+        "last_login": "2025-04-18T14:26:47.957Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "p@g.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-02-24T11:34:48.018Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$88XGMJ8JYNsgGHY9Xfznab$wxa3BTNCMk2KB9nufl76B0AbajSXkvhuQHxFaBAh8Yg=",
+        "last_login": "2025-03-19T09:44:16.493Z",
+        "is_superuser": true,
+        "username": "doaa",
+        "first_name": "",
+        "last_name": "",
+        "email": "a@b.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-03-11T09:46:33.418Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$150000$5g19nptFt8vH$hYDkPtalHdk6UKIELJQTXV41AABf/vZLtaDvzVNr76Q=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-04-15T07:08:40Z",
+        "groups": [],
+        "user_permissions": [
+            [
+                "view_courses",
+                "common_App",
+                "courses"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$150000$1qUQbOLVfJqQ$MP+HMwdoet1ZUks1v1OqPxPwtYurBgLczFriJQrMnWA=",
+        "last_login": "2025-04-15T07:13:50.085Z",
+        "is_superuser": false,
+        "username": "test2",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-15T07:12:25Z",
+        "groups": [],
+        "user_permissions": [
+            [
+                "add_courses",
+                "common_App",
+                "courses"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-03-12T08:54:31.937Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "1",
+        "object_repr": "Robotics",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-03-12T08:58:03.015Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "1",
+        "object_repr": "Robotics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-03-12T08:59:02.758Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "python",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-03-12T09:01:11.417Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "scratch",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-03-12T09:03:42.142Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-03-12T09:03:49.607Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-03-12T09:03:57.307Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "1",
+        "object_repr": "Robotics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-03-12T09:22:26.607Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-03-12T09:29:45.742Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-03-12T09:30:05.791Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "1",
+        "object_repr": "Robotics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-03-16T08:39:14.667Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "1",
+        "object_repr": "Robotics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-03-16T08:56:58.925Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"CourseStatus\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-03-16T08:57:09.550Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"CourseStatus\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-03-16T08:57:25.033Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "1",
+        "object_repr": "Robotics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"CourseStatus\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-03-16T08:59:05.332Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"CourseStatus\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-03-16T09:00:31.647Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"CourseStatus\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-03-16T09:00:44.962Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"CourseStatus\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-03-16T09:00:57.949Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "1",
+        "object_repr": "Robotics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"CourseStatus\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-03-16T09:11:25.582Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "Scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2025-03-16T09:11:38.183Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "Python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2025-03-16T09:12:46.106Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "Scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2025-03-19T13:15:14.176Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "Scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Age\", \"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2025-03-19T13:15:36.412Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "Python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Age\", \"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2025-03-19T13:16:01.381Z",
+        "user": [
+            "doaa"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "1",
+        "object_repr": "Robotics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Age\", \"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2025-03-23T14:46:11.478Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "4",
+        "object_repr": "mobile application",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2025-03-23T14:48:58.323Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "4",
+        "object_repr": "mobile application",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2025-03-23T15:11:20.626Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "Scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Course overview\", \"What you will learn\", \"Requirments\", \"Course duration\", \"Session duration\", \"MaxNmberofstudents\", \"Age\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2025-03-23T15:12:38.237Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "Scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"What you will learn\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2025-04-06T12:10:46.772Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "4",
+        "object_repr": "mobile application",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2025-04-06T12:10:59.381Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "Scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2025-04-06T12:12:08.094Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "Python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"course_overview\", \"what_you_will_learn\", \"requirments\", \"course_duration\", \"session_duration\", \"age\", \"is_active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2025-04-06T12:12:40.258Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "1",
+        "object_repr": "Robotics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"course_overview\", \"what_you_will_learn\", \"requirments\", \"course_duration\", \"session_duration\", \"is_active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2025-04-15T06:43:27.356Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "4",
+        "object_repr": "mobile application",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2025-04-15T06:43:45.284Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "Python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2025-04-15T07:08:43.123Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "test",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2025-04-15T07:09:26.354Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "test",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"user_permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2025-04-15T07:12:26.827Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "test2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2025-04-15T07:13:38.511Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "test2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_staff\", \"user_permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2025-04-18T14:29:31.836Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "2",
+        "object_repr": "Python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2025-04-18T14:29:48.666Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "Scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2025-04-18T14:30:11.830Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "3",
+        "object_repr": "Scratch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2025-04-19T12:42:03.240Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "4",
+        "object_repr": "mobile application",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2025-04-19T12:43:29.401Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "4",
+        "object_repr": "mobile application",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Age\", \"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2025-04-19T12:43:50.659Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "4",
+        "object_repr": "mobile application",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Age\", \"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2025-04-19T12:48:31.276Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "4",
+        "object_repr": "mobile application",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2025-04-19T12:48:44.424Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "common_App",
+            "courses"
+        ],
+        "object_id": "4",
+        "object_repr": "mobile application",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}
+]
