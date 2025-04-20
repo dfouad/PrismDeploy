@@ -22,3 +22,6 @@ class StudentForm(forms.ModelForm):
         if course_instance:
             # Set initial value for the course field
             self.initial['course'] = course_instance.pk
+
+
+            
