@@ -24,4 +24,5 @@ class StudentForm(forms.ModelForm):
             self.initial['course'] = course_instance.pk
 
 
-            
+
+
