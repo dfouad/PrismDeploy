@@ -1,0 +1,243 @@
+{% extends 'Main.html' %}
+{% load static %}
+
+{% block content1 %}
+
+
+ 
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="{% static 'img/carousel-1.jpg' %}" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10 d-flex flex-column align-items-center">
+                                    <h1 class="display-2 animated slideInDown mb-3" style="color: rgb(185, 69, 16);">
+                                        From Light to Logic - Prism Coding for Kids
+                                    </h1>                                    
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2 mt-n6">
+                                        "PrismCode transforms young minds into future innovators by breaking complex coding concepts into a spectrum of fun, creativity, and learning. Just like a prism refracts light into vibrant colors, we help kids turn their ideas into bright, innovative digital creations!"
+                                    </p>
+                                    <div class="d-flex w-100">
+                                        <a href="/students/courses" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInLeft me-auto">
+                                            Our Courses
+                                        </a>
+                                        <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 animated slideInRight ms-auto">
+                                            Learn More
+                                        </a>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+        <!-- Carousel End -->
+
+
+        <!-- Facilities Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Find Best Classes For Your Child</h1>
+                    <p>Explore classes by age group to discover computer science courses and learning pathways that best align with your child's interests.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <<span class="bg-primary"></span>
+                                 <i class="fa fa-child fa-3x text-danger"></i>
+                                <span class="bg-primary"></span>
+                                
+                            </div>
+
+                            
+                            <div class="facility-text bg-primary text-center">
+                                <a href="/students/courseByAge/5-7/" class="text-primary fw-bold" style="text-decoration: none;">
+                                    <h3 class="text-primary mb-3 fs-1">
+                                        <span class="d-block">5 - 7</span>
+                                        <span class="d-block">Years</span>
+                                    </h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-success">
+                                <span class="bg-success"></span>
+                                <i class="fa fa-gamepad fa-3x text-success"></i>
+                                <span class="bg-success"></span>
+                            </div>
+                            <div class="facility-text bg-success">
+                            <a href="/students/courseByAge/7-9/" class="text-primary fw-bold" style="text-decoration: none;">
+
+                                <h3 class="text-primary mb-3 fs-1">
+                                    <span class="d-block">7 - 9</span>
+                                    <span class="d-block">Years</span>
+                                </h3>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-warning">
+                                <span class="bg-warning"></span>
+                                <i class="fa fa-robot fa-3x text-warning"></i>
+                                <span class="bg-warning"></span>
+                            </div>
+                            <div class="facility-text bg-warning">
+                            <a href="/students/courseByAge/9-11/" class="text-primary fw-bold" style="text-decoration: none;">
+
+                                <h3 class="text-primary mb-3 fs-1">
+                                    <span class="d-block">9 - 11</span>
+                                    <span class="d-block">Years</span>
+                                </h3>
+                            </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-info">
+                                <span class="bg-info"></span>
+                                <i class="fa fa-laptop-code fa-3x text-info"></i>
+                                <span class="bg-info"></span>
+                            </div>
+                            <div class="facility-text bg-info">
+                             <a href="/students/courseByAge/11-13/" class="text-primary fw-bold" style="text-decoration: none;">
+
+                                <h3 class="text-primary mb-3 fs-1">
+
+                                    <span class="d-block">11-13</span>
+                                    <span class="d-block">Years</span>
+                                    
+                                </h3>
+                            </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facilities End -->
+
+
+        <!-- Classes Start -->
+        <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="mb-3">Main Categories</h1>
+               
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="classes-item">
+                        <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                            <img class="img-fluid rounded-circle" src="{% static 'img/classes-1.jpg' %}" alt="">
+                        </div>
+                        <div class="bg-light rounded p-4 pt-5 mt-n5">
+                            
+                            <a class="d-block text-center h3 mt-3 mb-4" href="/students/courseByCategory/Programming/">PROGRAMMING</a>
+                            
+       
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="classes-item">
+                        <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                            <img class="img-fluid rounded-circle" src="{% static 'img/classes-2.jpg' %}" alt="">
+                        </div>
+                        <div class="bg-light rounded p-4 pt-5 mt-n5">
+                            <a class="d-block text-center h3 mt-3 mb-4" href="/students/courseByCategory/Robotics/">ROBOTICS</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="classes-item">
+                        <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                            <img class="img-fluid rounded-circle" src="{% static 'img/classes-3.jpg' %}" alt="">
+                        </div>
+                        <div class="bg-light rounded p-4 pt-5 mt-n5">
+                            <a class="d-block text-center h3 mt-3 mb-4" href="/students/courseByCategory/Strong%20Mind/">STRONG MIND</a>
+                            
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        </div>
+        <!-- Classes End -->
+
+       
+
+
+       
+
+
+        
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Clients Say!</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-1.jpg' %}" style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Client Name</h3>
+                                <span>Profession</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-2.jpg' %}" style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Client Name</h3>
+                                <span>Profession</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" style="width: 90px; height: 90px;">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Client Name</h3>
+                                <span>Profession</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+  
+
+        {%  endblock content1 %}
