@@ -39,117 +39,87 @@
         <h1 class="mb-3">Courses by Prism Academy</h1>
         <p>Our fun and interactive courses are designed to spark creativity and problem-solving skills. Explore our courses below and start your child's journey today!".</p>
       </div>
+     
 
-      <div class="nav-item dropdown" >
-        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses By Age </a>
-        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-            <a href="{% url 'courseByAge' '5-7' %}" class="dropdown-item">Cources from 5-7</a>
-            <a href="{% url 'courseByAge' '7-9' %}" class="dropdown-item">Cources from 7-9</a>
-            <a href="{% url 'courseByAge' '9-11' %}" class="dropdown-item">Cources from 9-11</a>
-            <a href="{% url 'courseByAge' '11-13' %}" class="dropdown-item">Cources from 11-13</a>
-        </div>
-      </div>
 
-      <div class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses By Category </a>
-        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-            <a href="{% url 'courseByCategory' 'Programming' %}" class="dropdown-item">Programming</a>
-            <a href="{% url 'courseByCategory' 'Robotics' %}" class="dropdown-item">Robotics</a>
-            <a href="{% url 'courseByCategory' 'Strong Mind' %}" class="dropdown-item">Strong Mind</a>
-        </div>
-      </div>     
-
-      <div class="row g-4">
-        {% for course in activecoursesList %}
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="classes-item">
-              <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                <img class="img-fluid rounded-circle" src="{{ course.image.url }}" alt="" />
-                
-              </div>
-              <div class="bg-light rounded p-4 pt-5 mt-n5">
-                <a class="d-block text-center h3 mt-3 mb-4" href="">{{course.name}}</a>
-                <div class="d-flex align-items-center justify-content-between mb-4">
-                  <div class="d-flex align-items-center">
-                    <div class="ms-3">
-                      <h6 class="text-primary mb-1">{{course.CourseStatus}}</h6>
-                      <small>{{course.price}} egp</small>
-                      <br>
-                      <small><p style="color:orange;">{{course.is_active}}</p></small>
-                    </div>
-                  </div>
-                  <a class="bg-primary text-white rounded-pill py-2 px-3" href="{% url 'courseDetails' course.id %}">Details</a>
-                </div>
-                <div class="row g-1">
-                  <div class="col-4">
-                    <div class="border-top border-3 border-primary pt-2">
-                      <h6 class="text-primary mb-1">Age:</h6>
-                      <small>{{course.age}}</small>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="border-top border-3 border-success pt-2">
-                      <h6 class="text-success mb-1">Hours:</h6>
-                      <small>48 hours</small>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="border-top border-3 border-warning pt-2">
-                      <h6 class="text-warning mb-1">Duration:</h6>
-                      <small>3 Month</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="d-flex align-items-start" style="gap: 700px; margin-top: -50px;">
+        <div class="col-sm-2">
+          <div class="form-floating">
+              <select  class="form-control border-0" id="coursesByAge"  aria-label="Courses By Age">
+                  <option value="">Choose Age Group</option>
+                  <option value="5-7">Cources from 5-7</option>
+                  <option value="7-9">Cources from 7-9</option>
+                  <option value="9-11">Cources from 9-11</option>
+                  <option value="11+">Cources from 11+</option>
+                </select>
+              <label for="course">Courses By Age</label>                                                  
           </div>
-        {% endfor %}
-
-        {% for course in sooncoursesList %}
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="classes-item">
-            <div class="bg-light rounded-circle w-75 mx-auto p-3" >
-              <span class="badge"> Coming Soon</span>
-              <img class="img-fluid rounded-circle" src="{{ course.image.url }}" alt="" />
-            </div>
-            <div class="bg-light rounded p-4 pt-5 mt-n5">
-              <a class="d-block text-center h3 mt-3 mb-4" href="">{{course.name}}</a>
-              <div class="d-flex align-items-center justify-content-between mb-4">
-                <div class="d-flex align-items-center">
-                  <div class="ms-3">
-                    <h6 class="text-primary mb-1">{{course.CourseStatus}}</h6>
-                    <small>{{course.price}} egp</small>
-                  </div>
-                </div>
-                <a class="bg-primary text-white rounded-pill py-2 px-3" href="{% url 'courseDetails' course.id %}">Details</a>
-              </div>
-              <div class="row g-1">
-                <div class="col-4">
-                  <div class="border-top border-3 border-primary pt-2">
-                    <h6 class="text-primary mb-1">Age:</h6>
-                    <small>{{course.age}}</small>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="border-top border-3 border-success pt-2">
-                    <h6 class="text-success mb-1">Hours:</h6>
-                    <small>48 hours</small>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="border-top border-3 border-warning pt-2">
-                    <h6 class="text-warning mb-1">Duration:</h6>
-                    <small>3 Month</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-
       </div>
+      
+      <div class="col-sm-2">
+        <div class="form-floating">
+            <select  class="form-control border-0" id="courseByCategory" >
+                <option value="">Choose Category</option>
+                <option value="Programming">Programming</option>
+                <option value="Robotics">Robotics</option>
+                <option value="Strong Mind">Strong Mind</option>
+              </select>
+            <label for="course">Courses By Category</label>                                                  
+        </div>
     </div>
   </div>
+
+      <div id="coursesContainer">
+
+        {% include 'StudentsApp/filteredCourses.html' with coursesList=coursesList %}
+       
+       </div>
+
   <!-- Classes End -->
+
+  <script>
+
+    const ageMenu      = document.getElementById("coursesByAge");
+    const categoryMenu = document.getElementById("courseByCategory");
+    const container    = document.getElementById("coursesContainer");
+
+    ageMenu.addEventListener("change", function () 
+    { 
+      var selectedAge = ageMenu.value
+       console.log("selected_age:",selectedAge);
+
+       fetch(`courseByAge/?course_age=${encodeURIComponent(selectedAge)}`)
+       .then(response => {
+        if (!response.ok) throw new Error("404 or other error");
+        return response.json();
+      })
+      .then(data => {
+        container.innerHTML = data.html;
+        console.log("Container:", container);
+        console.log("Returned HTML:", data.html);
+      })
+      .catch(error => {
+        console.error("Fetch error:", error);
+      });
+  });
+
+
+  categoryMenu.addEventListener("change", function () 
+    { 
+      var selectedcategory = categoryMenu.value
+
+       fetch(`courseByCategory/?course_category=${selectedcategory}`)
+       .then(response => {
+        if (!response.ok) throw new Error("404 or other error");
+        return response.json();
+      })
+      .then(data => {
+        container.innerHTML = data.html;
+      })
+      .catch(error => {
+        console.error("Fetch error:", error);
+      });
+  });
+
+  </script>
 {% endblock %}
