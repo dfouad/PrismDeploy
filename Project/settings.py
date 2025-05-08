@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Students',
     'common_App',
     #'django_extensions',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [

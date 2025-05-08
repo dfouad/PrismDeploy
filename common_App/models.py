@@ -1,5 +1,9 @@
 from django.db import models
 
+
+
+from multiselectfield import MultiSelectField # type: ignore
+
 # Create your models here.
 
 
@@ -24,10 +28,12 @@ class ToolKit(models.Model):
 
     kitID      = models.IntegerField(max_length=10,null=True)
     level      = models.IntegerField(max_length=5,null=True)
-    details    = models.TextField(max_length=100,null=True)
+    details    = models.TextField(max_length=1000,null=True)
     price      = models.IntegerField(max_length=50,null=True)
     components = models.ManyToManyField(Component)
 
+    def __str__(self):
+        return "level"+str(self.level) 
 
 
 class Centers(models.Model):
@@ -43,16 +49,22 @@ class Centers(models.Model):
 
 
 class Courses(models.Model):
+  
+      
+ 
+  age = (
+      ("5-7","5-7"),
+      ("7-9","7-9"),
+      ("9-11","9-11"),
+    
+      ("11+","11+")
+  )
+
   type = (
         ("Online Course","Online"),
         ("On-Site Course","Offline"),
-    )
-  age  = (
-          ("5-7","5-7"),
-          ("7-9","7-9"),
-          ("9-11","9-11"),
-          ("11+","11+"),
-        )
+    )     
+  
   category = (
                ("Programming","Programming"),
                ("Robotics","Robotics"),
@@ -76,15 +88,15 @@ class Courses(models.Model):
   kitId         = models.OneToOneField(ToolKit,null=True,blank=True,on_delete=models.CASCADE)
   maxNmberofstudents        = models.IntegerField(max_length=20,null=True)
   CourseStatus = models.CharField(max_length=50,choices=type,null=True)
-  age = models.CharField(max_length=50,choices=age,null=True)
+  age = MultiSelectField(max_length=50,choices=age)
   category = models.CharField(max_length=50,choices=category,null=True)
   image         = models.ImageField(null=True,blank=True)
   is_active     = models.CharField(max_length=50,choices=is_active,null=True)
 
   def __str__(self):
-        return self.name    
+        return self.name  
 
-
+  
 class Instractor(models.Model):
 
     name          = models.CharField(max_length=50,null=True)
