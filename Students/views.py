@@ -41,7 +41,7 @@ def courseDetails(request,course_id):
 def courseByAge(request):
     course_age = request.GET.get('course_age')
     print('course_age',course_age )
-    courses_by_age = Courses.objects.filter(age=course_age)
+    courses_by_age = Courses.objects.filter(age__contains=course_age)
     print(f"[DEBUG] Filtered courses for age '{course_age}': {[course.name for course in courses_by_age]}")
     html = render_to_string('StudentsApp/filteredCourses.html', {'coursesList':courses_by_age})
     print('html',html )
