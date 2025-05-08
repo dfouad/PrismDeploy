@@ -1,125 +1,58 @@
-{% extends 'Main.html' %}
-{% load static %}
 
-{% block content1 %}
-  <!-- Page Header End -->
-  <div class="container-xxl py-5 page-header position-relative mb-5">
-    <div class="container py-5">
-      <h1 class="display-2 text-white animated slideInDown mb-4">Courses</h1>
-      <nav aria-label="breadcrumb animated slideInDown">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="breadcrumb-item text-white active" aria-current="page">Courses</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
-
-
-  <!-- Page Header End -->
-
-  <!-- Classes Start -->
-
+ 
+    {# templates/StudentsApp/filteredCourses.html #}
       <div class="row g-4">
-        {% for course in filtered_courses_by_age %}
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="classes-item">
-              <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                <img class="img-fluid rounded-circle" src="{{ course.image.url }}" alt="" />
-                
-              </div>
-              <div class="bg-light rounded p-4 pt-5 mt-n5">
-                <a class="d-block text-center h3 mt-3 mb-4" href="">{{course.name}}</a>
-                <div class="d-flex align-items-center justify-content-between mb-4">
-                  <div class="d-flex align-items-center">
-                    <div class="ms-3">
-                      <h6 class="text-primary mb-1">{{course.CourseStatus}}</h6>
-                      <small>{{course.price}} egp</small>
-                      <br>
-                      <small><p style="color:orange;">{{course.is_active}}</p></small>
-                    </div>
+        {% for course in coursesList  %}
+          
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 50px;">
+          <div class="classes-item">
+            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+              {% if course.is_active == "Coming Soon" %}
+              <span class="badge"> Coming Soon</span>
+              {% endif %}
+              <img class="img-fluid rounded-circle" src="{{ course.image.url }}" alt="" />
+              
+            </div>
+            <div class="bg-light rounded p-4 pt-5 mt-n5">
+              <a class="d-block text-center h3 mt-3 mb-4" href="">{{course.name}}</a>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="d-flex align-items-center">
+                  <div class="ms-3">
+                    <h6 class="text-primary mb-1">{{course.CourseStatus}}</h6>
+                    <small>{{course.price}} egp</small>
+                    <br>
+                    {% if course.is_active == "Active Now" %}
+                    <small><p style="color:orange;">Active Now</p></small>
+                    {% endif %}
                   </div>
-                  <a class="bg-primary text-white rounded-pill py-2 px-3" href="{% url 'courseDetails' course.id %}">Details</a>
                 </div>
-                <div class="row g-1">
-                  <div class="col-4">
-                    <div class="border-top border-3 border-primary pt-2">
-                      <h6 class="text-primary mb-1">Age:</h6>
-                      <small>{{course.age}}</small>
-                    </div>
+                <a class="bg-primary text-white rounded-pill py-2 px-3" href="{% url 'courseDetails' course.id %}">Details</a>
+              </div>
+              <div class="row g-1">
+                <div class="col-4">
+                  <div class="border-top border-3 border-primary pt-2">
+                    <h6 class="text-primary mb-1">Age:</h6>
+                    <small>{{course.age}}</small>
                   </div>
-                  <div class="col-4">
-                    <div class="border-top border-3 border-success pt-2">
-                      <h6 class="text-success mb-1">Hours:</h6>
-                      <small>48 hours</small>
-                    </div>
+                </div>
+                <div class="col-4">
+                  <div class="border-top border-3 border-success pt-2">
+                    <h6 class="text-success mb-1">Hours:</h6>
+                    <small>48 hours</small>
                   </div>
-                  <div class="col-4">
-                    <div class="border-top border-3 border-warning pt-2">
-                      <h6 class="text-warning mb-1">Duration:</h6>
-                      <small>3 Month</small>
-                    </div>
+                </div>
+                <div class="col-4">
+                  <div class="border-top border-3 border-warning pt-2">
+                    <h6 class="text-warning mb-1">Duration:</h6>
+                    <small>3 Month</small>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        {% endfor %}
+        </div>
+      {% endfor %}
 
-        <div class="row g-4">
-          {% for course in filtered_courses_by_category %}
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="classes-item">
-                <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                  <img class="img-fluid rounded-circle" src="{{ course.image.url }}" alt="" />
-                  
-                </div>
-                <div class="bg-light rounded p-4 pt-5 mt-n5">
-                  <a class="d-block text-center h3 mt-3 mb-4" href="">{{course.name}}</a>
-                  <div class="d-flex align-items-center justify-content-between mb-4">
-                    <div class="d-flex align-items-center">
-                      <div class="ms-3">
-                        <h6 class="text-primary mb-1">{{course.CourseStatus}}</h6>
-                        <small>{{course.price}} egp</small>
-                        <br>
-                        <small><p style="color:orange;">{{course.is_active}}</p></small>
-                      </div>
-                    </div>
-                    <a class="bg-primary text-white rounded-pill py-2 px-3" href="{% url 'courseDetails' course.id %}">Details</a>
-                  </div>
-                  <div class="row g-1">
-                    <div class="col-4">
-                      <div class="border-top border-3 border-primary pt-2">
-                        <h6 class="text-primary mb-1">Age:</h6>
-                        <small>{{course.age}}</small>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="border-top border-3 border-success pt-2">
-                        <h6 class="text-success mb-1">Hours:</h6>
-                        <small>48 hours</small>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="border-top border-3 border-warning pt-2">
-                        <h6 class="text-warning mb-1">Duration:</h6>
-                        <small>3 Month</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          {% endfor %}
-  
-
-
-
-
-      </div>
     </div>
-  </div>
-  <!-- Classes End -->
-{% endblock %}
+
+
