@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-import os
+import os 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -154,8 +154,8 @@ GRAPH_MODELS = {
 
 
 #ALLOWED_HOSTS = ['192.168.1.50']
-#ALLOWED_HOSTS = ["dfouad.pythonanywhere.com","127.0.0.1","localhost:8000","prismdeploy-production.up.railway.app"]
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["dfouad.pythonanywhere.com","127.0.0.1","localhost:8000","prismdeploy-production.up.railway.app"]
+#ALLOWED_HOSTS = ["*"]
 
 
 CSRF_TRUSTED_ORIGINS = ['https://prismdeploy-production.up.railway.app']
