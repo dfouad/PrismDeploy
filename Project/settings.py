@@ -158,4 +158,6 @@ GRAPH_MODELS = {
 ALLOWED_HOSTS = ["*"]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://purple-field-production.up.railway.app']
+
+CSRF_TRUSTED_ORIGINS = ['https://prismdeploy-production.up.railway.app']
+
