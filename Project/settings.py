@@ -155,4 +155,5 @@ GRAPH_MODELS = {
 
 
 #ALLOWED_HOSTS = ['192.168.1.50']
-ALLOWED_HOSTS = ["dfouad.pythonanywhere.com","127.0.0.1","localhost:8000"]
+#ALLOWED_HOSTS = ["dfouad.pythonanywhere.com","127.0.0.1","localhost:8000"]
+ALLOWED_HOSTS = ["*"]
