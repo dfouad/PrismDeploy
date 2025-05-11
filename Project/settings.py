@@ -135,9 +135,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR , 'static_collected')
 
 #STATICFILES_DIRS = [os.path.join(BASE_DIR , 'Project/static')]
@@ -156,5 +154,8 @@ GRAPH_MODELS = {
 
 
 #ALLOWED_HOSTS = ['192.168.1.50']
-#ALLOWED_HOSTS = ["dfouad.pythonanywhere.com","127.0.0.1","localhost:8000"]
+#ALLOWED_HOSTS = ["dfouad.pythonanywhere.com","127.0.0.1","localhost:8000","prismdeploy-production.up.railway.app"]
 ALLOWED_HOSTS = ["*"]
+
+
+CSRF_TRUSTED_ORIGINS = ['https:purple-field-production.up.railway.app']
