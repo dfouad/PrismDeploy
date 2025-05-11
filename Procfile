@@ -1,1 +1,1 @@
-web: gunicorn Project.wsgi
+wwweb: gunicorn Project.wsgi
