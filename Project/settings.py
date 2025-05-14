@@ -53,7 +53,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Project.urls'
@@ -134,18 +133,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 
-
-
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_origin')]
-#STATIC_ROOT = os.path.join(BASE_DIR , 'static')
-
-# Collects static files here
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# Add this for serving in production
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+#STATIC_ROOT = os.path.join(BASE_DIR , 'static')
 #STATICFILES_DIRS = [os.path.join(BASE_DIR , 'Project/static')]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -162,10 +155,4 @@ GRAPH_MODELS = {
 
 
 #ALLOWED_HOSTS = ['192.168.1.50']
-#ALLOWED_HOSTS = ["dfouad.pythonanywhere.com","127.0.0.1","localhost:8000","prismdeploy-production.up.railway.app"]
-ALLOWED_HOSTS = ["*"]
-
-
-
-CSRF_TRUSTED_ORIGINS = ['https://prismdeploy-production.up.railway.app']
-
+ALLOWED_HOSTS = ["dfouad.pythonanywhere.com","127.0.0.1","localhost:8000"]

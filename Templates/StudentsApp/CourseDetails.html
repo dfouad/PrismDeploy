@@ -43,7 +43,7 @@
                             <p class="mb-4">
                                 <h5 class="mb-4">What you'll learn</h5>
                                 {% for line in course.what_you_will_learn.splitlines %}
-                                <i class="fa fa-check"></i>  {{line}} <br>
+                                <div style="white-space: pre;">  {{line}} </div>
                                 {% endfor%}
                             </p>
                             

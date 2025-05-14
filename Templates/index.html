@@ -15,17 +15,13 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-12 col-lg-10 d-flex flex-column align-items-center">
-                                    <h1 class="display-2 animated slideInDown mb-3" style="color: rgb(185, 69, 16);">
-                                        From Light to Logic - Prism Coding for Kids
-                                    </h1>                                    
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2 mt-n6">
-                                        "PrismCode transforms young minds into future innovators by breaking complex coding concepts into a spectrum of fun, creativity, and learning. Just like a prism refracts light into vibrant colors, we help kids turn their ideas into bright, innovative digital creations!"
-                                    </p>
+                                    
                                     <div class="d-flex w-100">
-                                        <a href="/students/courses" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInLeft me-auto">
+                                        <a href="/students/courses" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 position-absolute" style="bottom: 20px; left: 20px; z-index: 10;">
                                             Our Courses
                                         </a>
-                                        <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 animated slideInRight ms-auto">
+
+                                        <a href="/learn-more" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 position-absolute" style="bottom: 20px; right: 20px; z-index: 10;">
                                             Learn More
                                         </a>
                                     </div>
@@ -61,7 +57,8 @@
 
                             
                             <div class="facility-text bg-primary text-center">
-                                <a href="/students/courseByAge/5-7/" class="text-primary fw-bold" style="text-decoration: none;">
+                                
+                                <a href="{% url 'courses_age' '5-7' %}" class="text-primary fw-bold" style="text-decoration: none;">
                                     <h3 class="text-primary mb-3 fs-1">
                                         <span class="d-block">5 - 7</span>
                                         <span class="d-block">Years</span>
@@ -78,7 +75,7 @@
                                 <span class="bg-success"></span>
                             </div>
                             <div class="facility-text bg-success">
-                            <a href="/students/courseByAge/7-9/" class="text-primary fw-bold" style="text-decoration: none;">
+                            <a href="{% url 'courses_age' '7-9' %}" class="text-primary fw-bold" style="text-decoration: none;">
 
                                 <h3 class="text-primary mb-3 fs-1">
                                     <span class="d-block">7 - 9</span>
@@ -96,7 +93,7 @@
                                 <span class="bg-warning"></span>
                             </div>
                             <div class="facility-text bg-warning">
-                            <a href="/students/courseByAge/9-11/" class="text-primary fw-bold" style="text-decoration: none;">
+                            <a href="{% url 'courses_age' '9-11' %}" class="text-primary fw-bold" style="text-decoration: none;">
 
                                 <h3 class="text-primary mb-3 fs-1">
                                     <span class="d-block">9 - 11</span>
@@ -115,7 +112,7 @@
                                 <span class="bg-info"></span>
                             </div>
                             <div class="facility-text bg-info">
-                             <a href="/students/courseByAge/11-13/" class="text-primary fw-bold" style="text-decoration: none;">
+                             <a href="{% url 'courses_age' '11+' %}" class="text-primary fw-bold" style="text-decoration: none;">
 
                                 <h3 class="text-primary mb-3 fs-1">
 
@@ -149,7 +146,7 @@
                         </div>
                         <div class="bg-light rounded p-4 pt-5 mt-n5">
                             
-                            <a class="d-block text-center h3 mt-3 mb-4" href="/students/courseByCategory/Programming/">PROGRAMMING</a>
+                            <a class="d-block text-center h3 mt-3 mb-4" href="{% url 'courses_category' 'Programming' %}">PROGRAMMING</a>
                             
        
                         </div>
@@ -161,7 +158,7 @@
                             <img class="img-fluid rounded-circle" src="{% static 'img/classes-2.jpg' %}" alt="">
                         </div>
                         <div class="bg-light rounded p-4 pt-5 mt-n5">
-                            <a class="d-block text-center h3 mt-3 mb-4" href="/students/courseByCategory/Robotics/">ROBOTICS</a>
+                            <a class="d-block text-center h3 mt-3 mb-4" href="{% url 'courses_category' 'Robotics' %}">ROBOTICS</a>
                             
                         </div>
                     </div>
@@ -172,7 +169,7 @@
                             <img class="img-fluid rounded-circle" src="{% static 'img/classes-3.jpg' %}" alt="">
                         </div>
                         <div class="bg-light rounded p-4 pt-5 mt-n5">
-                            <a class="d-block text-center h3 mt-3 mb-4" href="/students/courseByCategory/Strong%20Mind/">STRONG MIND</a>
+                            <a class="d-block text-center h3 mt-3 mb-4" href="{% url 'courses_category' 'Strong Mind' %}">STRONG MIND</a>
                             
                         </div>
                     </div>
@@ -195,43 +192,33 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Our Clients Say!</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    <h1 class="mb-3">Voices from Our Learners</h1>
+                    <p>Here's what our students are saying about their learning experience at Prism.
+Real feedback from real learners who took their first steps in programming with us.</p>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item bg-light rounded p-5">
-                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
-                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-1.jpg' %}" style="width: 90px; height: 90px;">
-                            <div class="ps-3">
-                                <h3 class="mb-1">Client Name</h3>
-                                <span>Profession</span>
-                            </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
-                        </div>
+                       <img src="{% static 'img/reviews/review1.jpg' %}">
                     </div>
                     <div class="testimonial-item bg-light rounded p-5">
-                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
-                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-2.jpg' %}" style="width: 90px; height: 90px;">
-                            <div class="ps-3">
-                                <h3 class="mb-1">Client Name</h3>
-                                <span>Profession</span>
-                            </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
-                        </div>
+                        <img src="{% static 'img/reviews/review2.jpg' %}">
                     </div>
                     <div class="testimonial-item bg-light rounded p-5">
-                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
-                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" style="width: 90px; height: 90px;">
-                            <div class="ps-3">
-                                <h3 class="mb-1">Client Name</h3>
-                                <span>Profession</span>
-                            </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
-                        </div>
+                        <img src="{% static 'img/reviews/review3.jpg' %}">
                     </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <img src="{% static 'img/reviews/review4.jpg' %}">
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <img src="{% static 'img/reviews/review5.jpg' %}">
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <img src="{% static 'img/reviews/review6.jpg' %}">
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <img src="{% static 'img/reviews/review7.jpg' %}">
+                    </div>
+                    
                 </div>
             </div>
         </div>
