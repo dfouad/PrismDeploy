@@ -167,5 +167,6 @@ ALLOWED_HOSTS = ["*"]
 
 
 
-CSRF_TRUSTED_ORIGINS = ['https://prismdeploy-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://www.prism-edu.com','https://prismdeploy-production.up.railway.app']
+
 
