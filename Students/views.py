@@ -16,7 +16,6 @@ from django.template.loader import render_to_string
 def courses(request,age=None,category=None):
     print('age',age)
     if age:
-        print("age  ---- if")
         courses=Courses.objects.filter(age__contains=age).order_by('is_active')
     elif category:
         courses=Courses.objects.filter(category=category).order_by('is_active')
@@ -26,37 +25,42 @@ def courses(request,age=None,category=None):
     return render (request,'StudentsApp/courses.html',context)
 
 def StudentApplication(request, course_id):
-    course_instance = get_object_or_404(Courses, id=course_id)
-    print(f"[DEBUG] Course instance: {course_instance}")
+    # Retrieve the course instance by ID or return 404 if not found
+    course_instance = get_object_or_404(OngoingCourses, id=course_id)
 
     if request.method == 'POST':
-        print(request.POST)  # This will print the form data, including the hidden course field
-
-        print("[DEBUG] POST request received")
-        form = StudentForm(request.POST, course_instance=course_instance)
+        print("POST request received")
+        # Populate the form with submitted data and uploaded files
+        form = StudentForm(request.POST, request.FILES)
         if form.is_valid():
-            print("[DEBUG] Form is valid")
+            print("Form is valid")
+            # Save the form but don't commit to DB yet to modify before saving
             student = form.save(commit=False)
             student.save()
-            student.course.set([course_instance])
-
-            messages.success(request, 'Application submitted successfully!')  # ✅ success message
-            return redirect('submit', course_id=course_id)  # Redirect to same view to avoid resubmission
+            # Set the ManyToMany relationship for the enrolled course
+            student.Enrolled_Course.set([course_instance])  # ✅ Correct M2M assignment
+            messages.success(request, 'Application submitted successfully!')
+            return redirect('submit', course_id=course_id)
         else:
-            print("[DEBUG] Form errors:", form.errors)
+            print("Form is invalid")
+            # Print form errors to console for debugging
+            print(form.errors)
     else:
-        print("[DEBUG] GET request received")
-        form = StudentForm(course_instance=course_instance)
+        # Initialize an empty form for GET request
+        form = StudentForm()
 
+    # Render the application form template with form and course context
     return render(request, 'StudentsApp/ApplicationForm.html', {
-        'form': form,'course_instance': course_instance
+        'form': form,
+        'course_instance': course_instance
     })
-
 
 
 def courseDetails(request,course_id):
     course_details=Courses.objects.get(id=course_id)
-    context={'course':course_details}
+    ongoing_course=OngoingCourses.objects.filter(courseID=course_id)
+   
+    context={'course':course_details,'ongoing_course':ongoing_course}
     return render (request,'StudentsApp/CourseDetails.html',context)
 
 

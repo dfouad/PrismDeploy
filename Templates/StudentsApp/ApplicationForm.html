@@ -12,18 +12,22 @@
                     <div class="h-100 d-flex flex-column justify-content-center p-5">
                         <h1 class="mb-4">Student Application</h1>
 
-            {% if messages %}
-            {% for message in messages %}
-                <div class="alert alert-success">{{ message }}</div>
-            {% endfor %}
-            {% endif %}
-                        <form method="post">
+                        {% if messages %}
+                            {% for message in messages %}
+                                <!-- Display success messages -->
+                                <div class="alert alert-success">{{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+
+                        <!-- Form starts -->
+                        <form method="post" enctype="multipart/form-data">
                             {% csrf_token %}
-                            
 
-                            <input type="hidden" name="course" value="{{ course_instance.pk }}">
+                            <!-- Hidden input for enrolled course (excluded in form) -->
+                            {{ form.Enrolled_Course }}
+
                             <div class="row g-3">
-
+                                <!-- Student name input -->
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         {{ form.name }}
@@ -31,6 +35,7 @@
                                     </div>
                                 </div>
 
+                                <!-- Phone number input -->
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         {{ form.phone }}
@@ -38,6 +43,7 @@
                                     </div>
                                 </div>
 
+                                <!-- Date of birth input -->
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         {{ form.dateofbirth }}
@@ -45,6 +51,7 @@
                                     </div>
                                 </div>
 
+                                <!-- School name input -->
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         {{ form.school }}
@@ -52,6 +59,7 @@
                                     </div>
                                 </div>
 
+                                <!-- Grade input -->
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         {{ form.grade }}
@@ -59,6 +67,7 @@
                                     </div>
                                 </div>
 
+                                <!-- Parent contact input -->
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         {{ form.parentContact }}
@@ -66,6 +75,7 @@
                                     </div>
                                 </div>
 
+                                <!-- Address input -->
                                 <div class="col-12">
                                     <div class="form-floating">
                                         {{ form.address }}
@@ -73,21 +83,36 @@
                                     </div>
                                 </div>
 
-                                <!-- Course dropdown - now visible but pre-selected -->
-                                 
+                                <!-- Paid fees checkbox and fee notice -->
+                                <div class="col-12 mb-3 form-check">
+                                    <p><strong>Course fees to 012345678 vodafone cash:</strong> {{ course_instance.courseID.price }}</p>
+                                    {{ form.paid_fees }}
+                                    <label class="form-check-label" for="{{ form.paid_fees.id_for_label }}">
+                                        Payment done
+                                    </label>
+                                </div>
 
-                                 <div class="col-12">
+                                <!-- File input for payment proof, initially hidden -->
+                                <div class="col-12 mb-3" id="payment-proof-container" style="display: none;">
+                                    <label for="{{ form.paying_image.id_for_label }}" class="form-label">Upload Payment Proof</label>
+                                    {{ form.paying_image }}
+                                    {{ form.paying_image.errors }}
+                                </div>
+
+                                <!-- Display selected course name -->
+                                <div class="col-12">
                                     <div class="form-floating">
-                                        <p><strong>Selected Course:</strong> {{ course_instance.name }}</p>
+                                        <p><strong>Selected Course:</strong> {{ course_instance.courseID.name }}</p>
                                     </div>
                                 </div>
 
+                                <!-- Submit button -->
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                                 </div>
-
                             </div>
                         </form>
+                        <!-- Form ends -->
 
                     </div>
                 </div>
@@ -97,4 +122,25 @@
     </div>
 </div>
 <!-- Appointment End -->
+
+<!-- Script to toggle payment proof field visibility -->
+<script>
+    function togglePaymentProof() {
+        const checkbox = document.getElementById("{{ form.paid_fees.id_for_label }}");
+        const proofContainer = document.getElementById("payment-proof-container");
+
+        // Show or hide payment proof field based on checkbox
+        if (checkbox.checked) {
+            proofContainer.style.display = "block";
+        } else {
+            proofContainer.style.display = "none";
+        }
+    }
+
+    // Initialize toggle state on page load and bind change event
+    document.addEventListener('DOMContentLoaded', function () {
+        togglePaymentProof();
+        document.getElementById("{{ form.paid_fees.id_for_label }}").addEventListener('change', togglePaymentProof);
+    });
+</script>
 {% endblock content1 %}
