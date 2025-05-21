@@ -74,15 +74,15 @@
 
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-        <a href="index.html" class="navbar-brand"><h1 class="m-0 text-primary"><img src="{% static 'img/logo.png' %}" class="icon-img" /></h1></a>
+        <a href="{% url 'home' %}" class="navbar-brand"><h1 class="m-0 text-primary"><img src="{% static 'img/logo.png' %}" class="icon-img" /></h1></a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-auto">
-            <a href="{% url 'home' %} " class="nav-item nav-link active">Home</a>
+            <a href="{% url 'home' %} " class="nav-item nav-link ">Home</a>
 
             <a href="{% url 'courses' %}" class="nav-item nav-link">Courses</a>
 
-            <a href="{% url 'application' 1 %}" class="nav-item nav-link">Join Us</a>
+            <a href="https://wa.me/+201025836649" class="nav-item nav-link">Join Us</a>
           </div>
           {% comment %} <a href="{% url 'login' %}" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a> {% endcomment %}
         </div>

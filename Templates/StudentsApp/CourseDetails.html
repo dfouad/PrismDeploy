@@ -8,12 +8,11 @@
       <h1 class="display-2 text-white animated slideInDown mb-4">Courses</h1>
       <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#">Courses</a>
-          </li>
+            <li class="breadcrumb-item">
+              <a href="{% url 'home' %} ">Home</a>
+            </li>
+            <li class="breadcrumb-item text-white active" >
+              <a href="{% url 'courses' %}">Courses</a> 
           <li class="breadcrumb-item text-white active" aria-current="page">Python</li>
         </ol>
       </nav>
@@ -91,11 +90,11 @@
          
 
           <h4 class="mb-4" style="font-family:sans-serif">Start your kid's Journey </h4>
-          <div style="overflow-x: auto; width: 100%;">
-          <table class="table table-hover" >
+<div style="overflow-x: auto; width: 100%;">
+          <table class="table table-hover">
             <thead>
               <tr>
-                <th>Starts</th>
+                 <th>Starts</th>
                 <th>Day</th>
                 <th>Time</th>
                 <th>Location</th>
@@ -107,11 +106,11 @@
             <tbody>
               {% for course in ongoing_course %}
               <tr>
-                <td>{{course.startDate}}</td>
+                <td>{{course.startDate|date:"d-M"}}</td>
                 <td>{{course.WeekDay}}</td>
-                <td>{{course.start_time}} - {{course.end_time}}</td>
+                <td>{{course.start_time}}</td>
                 <td >{{course.location}}</td>
-                <td >{{course.courseID.price}} egp</td>
+                <td >{{course.courseID.price}}</td>
                 <td ><b>{{course.age}}</b></td>
                 
                 <td>
@@ -121,7 +120,7 @@
              {% endfor %}
             </tbody>
           </table>
-          </div>
+</div>
         </div>
 
        
