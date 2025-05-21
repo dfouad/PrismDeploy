@@ -164,7 +164,7 @@ GRAPH_MODELS = {
 
 #ALLOWED_HOSTS = ['192.168.1.50']
 #ALLOWED_HOSTS = ["dfouad.pythonanywhere.com","127.0.0.1","localhost:8000","prismdeploy-production.up.railway.app"]
-ALLOWED_HOSTS = ['https://www.prism-edu.com','127.0.0.1','localhost:8000','prismdeploy-production.up.railway.app']
+ALLOWED_HOSTS = ['https://www.prism-edu.com','www.prism-edu.com','127.0.0.1','localhost:8000','prismdeploy-production.up.railway.app']
 CSRF_TRUSTED_ORIGINS = ['https://www.prism-edu.com','https://prismdeploy-production.up.railway.app']
 
 
