@@ -3,6 +3,7 @@ from django.db import models
 import datetime
 
 from multiselectfield import MultiSelectField # type: ignore
+from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
 
@@ -147,11 +148,11 @@ class OngoingCourses(models.Model):
 class Student(models.Model):
 
     name          = models.CharField(max_length=50,null=True)
-    phone         = models.IntegerField(null=True)
+    phone = PhoneNumberField(null=True, blank=True)
     dateofbirth   = models.DateField()
     school        = models.CharField(max_length=50,null=True)
     grade         = models.CharField(max_length=50,null=True)
-    parentContact = models.IntegerField(null=True)
+    parentContact = PhoneNumberField(null=True, blank=True)
     address       = models.TextField(max_length=200,null=True)
     studentID     = models.IntegerField(null=True)
     Enrolled_Course        = models.ManyToManyField(OngoingCourses)

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     #'django_extensions',
     'multiselectfield',
     'import_export',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [

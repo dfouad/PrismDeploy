@@ -40,7 +40,11 @@
                                     <div class="form-floating">
                                         {{ form.phone }}
                                         <label for="{{ form.phone.id_for_label }}">Phone Number</label>
+                                        <div id="phone-warning" class="text-danger small mt-1" style="display:none;"></div>
                                     </div>
+                                    {% for error in form.phone.errors %}
+                                        <div class="text-danger small">{{ error }}</div>
+                                    {% endfor %}
                                 </div>
 
                                 <!-- Date of birth input -->
@@ -68,11 +72,19 @@
                                 </div>
 
                                 <!-- Parent contact input -->
+
+
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         {{ form.parentContact }}
                                         <label for="{{ form.parentContact.id_for_label }}">Parent Contact</label>
+                                        <div id="parent-warning" class="text-danger small mt-1" style="display:none;"></div>
+
                                     </div>
+
+                                    {% for error in form.parentContact.errors %}
+                                        <div class="text-danger small">{{ error }}</div>
+                                    {% endfor %}
                                 </div>
 
                                 <!-- Address input -->
@@ -142,5 +154,47 @@
         togglePaymentProof();
         document.getElementById("{{ form.paid_fees.id_for_label }}").addEventListener('change', togglePaymentProof);
     });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const phoneInput = document.getElementById('id_phone');
+    const parentInput = document.getElementById('id_parentContact');
+
+    const phoneWarning = document.getElementById('phone-warning');
+    const parentWarning = document.getElementById('parent-warning');
+
+    const pattern = /^\+\d{10,15}$/;
+
+    function validate(input, warningEl, label) {
+        const value = input.value.trim();
+        if (!pattern.test(value)) {
+            warningEl.style.display = 'block';
+            warningEl.textContent = `${label} must be in international format (e.g. +201001234567).`;
+        } else {
+            warningEl.style.display = 'none';
+            warningEl.textContent = '';
+        }
+    }
+
+    if (phoneInput && phoneWarning) {
+        phoneInput.addEventListener('input', () => validate(phoneInput, phoneWarning, 'Student phone'));
+    }
+
+    if (parentInput && parentWarning) {
+        parentInput.addEventListener('input', () => validate(parentInput, parentWarning, 'Parent contact'));
+    }
+});
+</script>
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    const phone = document.querySelector('#{{ form.phone.id_for_label }}').value;
+    const parent = document.querySelector('#{{ form.parentContact.id_for_label }}').value;
+    const isValid = /^\+[\d]{10,15}$/.test(phone) && /^\+[\d]{10,15}$/.test(parent);
+
+    if (!isValid) {
+        e.preventDefault();
+        alert("Please enter phone numbers in international format (e.g. +201001234567).");
+    }
+});
 </script>
 {% endblock content1 %}
