@@ -8,11 +8,12 @@
       <h1 class="display-2 text-white animated slideInDown mb-4">Courses</h1>
       <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="{% url 'home' %} ">Home</a>
-            </li>
-            <li class="breadcrumb-item text-white active" >
-              <a href="{% url 'courses' %}">Courses</a> 
+          <li class="breadcrumb-item">
+            <a href="{% url 'home' %} ">Home</a>
+          </li>
+          <li class="breadcrumb-item text-white active">
+            <a href="{% url 'courses' %}">Courses</a>
+          </li>
           <li class="breadcrumb-item text-white active" aria-current="page">Python</li>
         </ol>
       </nav>
@@ -26,9 +27,7 @@
       <div class="row g-5 align-items-center">
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
           <h1 class="mb-4">{{ course.name }}</h1>
-          <p>
-            {{ course.description }}
-          </p>
+          <p>{{ course.description }}</p>
 
           <div class="mb-4">
             <h5 class="mb-4">Course Overview</h5>
@@ -44,12 +43,13 @@
           <div class="mb-4">
             <h5 class="mb-4">What you'll learn</h5>
             <ul style="list-style-type: square;">
-            {% for line in course.what_you_will_learn.splitlines %}
-            <li>
+              {% for line in course.what_you_will_learn.splitlines %}
+                <li>
                   {{ line }} <br />
                 </li>
-              {% comment %} <div style="white-space: pre;">{{ line }}</div> {% endcomment %}
-            {% endfor %}
+                {% comment %} <div style="white-space: pre;">{{ line }}</div> {% endcomment %}
+              {% endfor %}
+            </ul>
           </div>
 
           <div class="mb-4">
@@ -66,67 +66,83 @@
             {{ course.session_duration }} <br />
             <br />
           </div>
-
-         
-
-       
         </div>
         <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
           <div class="row">
-            <div class="col-12 text-center">
-              <img class="img-fluid w-75 rounded-circle bg-light p-3" src="{% static 'img/about-1.jpg' %}" alt="" />
-            </div>
-            <div class="col-6 text-start" style="margin-top: -150px;">
-              <img class="img-fluid w-100 rounded-circle bg-light p-3" src="{% static 'img/about-2.jpg' %}" alt="" />
-            </div>
-            <div class="col-6 text-end" style="margin-top: -150px;">
-              <img class="img-fluid w-100 rounded-circle bg-light p-3" src="{% static 'img/about-3.jpg' %}" alt="" />
-            </div>
+            {% if course.category == 'Robotics' %}
+              <div class="col-12 text-center">
+                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="{% static 'img/Robot-1.jpg' %}" alt="" />
+              </div>
+              <div class="col-6 text-start" style="margin-top: -150px;">
+                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="{% static 'img/Robot-2.jpg' %}" alt="" />
+              </div>
+              <div class="col-6 text-end" style="margin-top: -150px;">
+                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="{% static 'img/Robot-3.jpg' %}" alt="" />
+              </div>
+            {% elif course.category == 'Programming' %}
+              <div class="col-12 text-center">
+                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="{% static 'img/prog-1.jpg' %}" alt="" />
+              </div>
+              <div class="col-6 text-start" style="margin-top: -150px;">
+                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="{% static 'img/prog-2.jpg' %}" alt="" />
+              </div>
+              <div class="col-6 text-end" style="margin-top: -150px;">
+                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="{% static 'img/prog-3.jpg' %}" alt="" />
+              </div>
+            {% elif course.category == 'Strong Mind' %}
+              <div class="col-12 text-center">
+                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="{% static 'img/about-1.jpg' %}" alt="" />
+              </div>
+              <div class="col-6 text-start" style="margin-top: -150px;">
+                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="{% static 'img/about-2.jpg' %}" alt="" />
+              </div>
+              <div class="col-6 text-end" style="margin-top: -150px;">
+                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="{% static 'img/about-3.jpg' %}" alt="" />
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>
       <div class="row g-5 align-items-center">
         <div class="col-lg-10 wow fadeInUp" data-wow-delay="0.1s">
-         
+          <h4 class="mb-4" style="font-family:sans-serif">Start your kid's Journey</h4>
+          <div style="overflow-x: auto; width: 100%;">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Starts</th>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Price</th>
+                  <th>Age</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for course in ongoing_course %}
+                  <tr>
+                    <td>{{ course.startDate|date:'d-M' }}</td>
+                    <td>{{ course.WeekDay }}</td>
+                    <td>{{ course.start_time }}</td>
+                    <td>{{ course.location }}</td>
+                    <td>{{ course.courseID.price }}</td>
+                    <td>
+                      <b>{{ course.age }}</b>
+                    </td>
 
-          <h4 class="mb-4" style="font-family:sans-serif">Start your kid's Journey </h4>
-<div style="overflow-x: auto; width: 100%;">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                 <th>Starts</th>
-                <th>Day</th>
-                <th>Time</th>
-                <th>Location</th>
-                <th>Price</th>
-                <th>Age</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for course in ongoing_course %}
-              <tr>
-                <td>{{course.startDate|date:"d-M"}}</td>
-                <td>{{course.WeekDay}}</td>
-                <td>{{course.start_time}}</td>
-                <td >{{course.location}}</td>
-                <td >{{course.courseID.price}}</td>
-                <td ><b>{{course.age}}</b></td>
-                
-                <td>
-                  <a class="btn btn-primary rounded-pill py-1 px-3" href="{% url 'application' course.id %}">Enroll now</a>
-                </td>
-              </tr>
-             {% endfor %}
-            </tbody>
-          </table>
-</div>
-        </div>
-
-       
+                    <td>
+                      <a class="btn btn-primary rounded-pill py-1 px-3" href="{% url 'application' course.id %}">Enroll now</a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- course End -->
 {% endblock %}

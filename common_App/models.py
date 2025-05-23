@@ -132,7 +132,7 @@ class OngoingCourses(models.Model):
   instractor     = models.ForeignKey(Instractor,null=True,blank=True,on_delete=models.SET_NULL)
   location       = models.ForeignKey(Centers,null=True,blank=True,on_delete=models.SET_NULL)
   WeekDay        = models.CharField(max_length=3, choices=WEEKDAYS, default='MON')
-  age        = models.CharField(max_length=6, choices=age, default='5-7')
+  age = MultiSelectField(max_length=50,choices=age, default='5-7')
   start_time = models.TimeField(default=datetime.time(0, 0))
   end_time   = models.TimeField(default=datetime.time(0, 0))
   startDate      = models.DateField()
