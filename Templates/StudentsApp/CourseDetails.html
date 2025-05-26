@@ -110,30 +110,33 @@
             <table class="table table-hover">
               <thead>
                 <tr>
+                  <th></th>
+                  <th>Age</th>
                   <th>Starts</th>
                   <th>Day</th>
                   <th>Time</th>
                   <th>Location</th>
                   <th>Price</th>
-                  <th>Age</th>
-                  <th></th>
+                  
                 </tr>
               </thead>
               <tbody>
                 {% for course in ongoing_course %}
                   <tr>
+                    
+
+                    <td>
+                      <a class="btn btn-primary rounded-pill py-1 px-3" href="{% url 'application' course.id %}">Enroll now</a>
+                    </td>
+                    <td>
+                      <b>{{ course.age }}</b>
+                    </td>
                     <td>{{ course.startDate|date:'d-M' }}</td>
                     <td>{{ course.WeekDay }}</td>
                     <td>{{ course.start_time }}</td>
                     <td>{{ course.location }}</td>
                     <td>{{ course.courseID.price }}</td>
-                    <td>
-                      <b>{{ course.age }}</b>
-                    </td>
-
-                    <td>
-                      <a class="btn btn-primary rounded-pill py-1 px-3" href="{% url 'application' course.id %}">Enroll now</a>
-                    </td>
+                    
                   </tr>
                 {% endfor %}
               </tbody>
