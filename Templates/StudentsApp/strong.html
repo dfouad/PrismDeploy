@@ -8,12 +8,13 @@
       <h1 class="display-2 text-white animated slideInDown mb-4">Courses</h1>
       <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="{% url 'home' %} ">Home</a>
-            </li>
-            <li class="breadcrumb-item text-white active" >
-              <a href="{% url 'courses' %}">Courses</a> 
-          <li class="breadcrumb-item text-white active" aria-current="page">{{ course.name }}</li>
+          <li class="breadcrumb-item">
+            <a href="{% url 'home' %} ">Home</a>
+          </li>
+          <li class="breadcrumb-item text-white active">
+            <a href="{% url 'courses' %}">Courses</a>
+          </li>
+          <li class="breadcrumb-item text-white active" aria-current="page">العقل القوي</li>
         </ol>
       </nav>
     </div>
@@ -25,44 +26,58 @@
     <div class="container">
       <div class="row g-5 align-items-center">
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          <h1 class="mb-4">{{ course.name }}</h1>
-          <p>{{ course.description }}</p>
+          <h1 class="mb-4">العقل القوى</h1>
+          <p>ابنك بقى بينسى كتير؟ 
+تركيزه بقى قليل؟ 
+بقى مدمن على العاب على الفون؟
+
+دماغ الانسان بيتأثر تأثير سلبي بإدمان الألعاب الغير مفيدة، وعلشان نستوعب أكتر،
+ دماغ الانسان أشبه بعضلة، بتقوى بالتدريب وبتضعف بالإهمال والعادات السلبية،
+  زي ادمان الهاتف والكرتون والألعاب الغير مفيدة وقلة التفكير. 
+</p>
 
           <div class="mb-4">
-            <h5 class="mb-4">Course Overview</h5>
+           
+            <p> 
+            علشان كده احنا صممنا برنامج تدريبي متكامل، مبني على الالعاب والمنافسة علشان يحبها
+            ، وفي نفس الوقت نقدر نزرع جواه معاني وصفات ومهارات كتير، زي الصبر والتفكير والتركيز ونقوي الذاكرة بتاعته.
+
+
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h5 class="mb-4">محتويات البرنامج</h5>
             <ul style="list-style-type: square;">
-              {% for line in course.course_overview.splitlines %}
-                <li>
-                  {{ line }} <br />
-                </li>
-              {% endfor %}
+              اولا: هنبدأ ناخد مجموعة من العاب التركيز والتفكير والتحديات ، اللي هيكون الهدف منها تنمية مهارات زي الصبر والتفكير والتركيز.
+
+ثانيا: هنبدأ نعرفه ازاي دماغه بتشتغل، وازاي يقدر يتحكم فيها ويسيطر عليها، وهنعلمه طرق جديدة تساعده تذكر المعلومات بشكل منظم ومرتب.
+
+كل ده من خلال تطبيقات وتدريبات عملية والعاب وتحديات، علشان ميحسش بالملل ويكون متشجع ومتحمس انه يستمر ويكمل.
+
             </ul>
           </div>
 
+
           <div class="mb-4">
-            <h5 class="mb-4">What you'll learn</h5>
+            <h5 class="mb-4">مقدم البرنامج</h5>
             <ul style="list-style-type: square;">
-              {% for line in course.what_you_will_learn.splitlines %}
-                <li>
-                  {{ line }} <br />
-                </li>
-                {% comment %} <div style="white-space: pre;">{{ line }}</div> {% endcomment %}
-              {% endfor %}
+              
+              مهندس/ محمد رمضان
+** بطل مصر في قوة الذاكرة مرتين 2016 و 2017.
+** خبرة في تقديم اكثر من 70 برنامج تدريبي.
+** وصيف بطل افريقيا 2020.
+** مدرب وقائد منتخب مصر للذاكرة.
+** عضو الجمعية الدولية للذاكرة IAM بالمانيا.
+** ممثل موقع Memory League الامريكي في مصر
             </ul>
           </div>
 
+         
           <div class="mb-4">
-            <h5 class="mb-4">Technical requirements:</h5>
-            {% for line1 in course.requirments.splitlines %}
-              {{ line1 }} <br />
-            {% endfor %}
-            <br />
-          </div>
-
-          <div class="mb-4">
-            <h5 class="mb-4">Duration:</h5>
-            {{ course.course_duration }} <br />
-            {{ course.session_duration }} <br />
+            <h5 class="mb-4">عدد الحصص التدريبية:</h5>
+            ٨ حصص <br />
+            الحصة ساعة ونصف<br />
             <br />
           </div>
         </div>
@@ -104,33 +119,32 @@
       </div>
       <div class="row g-5 align-items-center">
         <div class="col-lg-10 wow fadeInUp" data-wow-delay="0.1s">
-          <h4 class="mb-4" style="font-family:sans-serif">Start your kid's Journey</h4>
+          <h4 class="mb-4" style="font-family:sans-serif">أبدأ رحلتك الذهنية</h4>
           <div style="overflow-x: auto; width: 100%;">
             <table class="table table-hover">
               <thead>
                 <tr>
                   <th></th>
-                  <th style="white-space: pre;">   Age  </th>
-                  <th>Starts</th>
-                  <th>Day</th>
-                  <th>Time</th>
-                  <th>Location</th>
-                  <th>Price</th>
+                  <th>العمر</th>
+                  <th>البداية</th>
+                  <th>اليوم</th>
+                  <th>الساعة</th>
+                  <th>المكان</th>
+                  <th>السعر</th>
                   
                 </tr>
               </thead>
               <tbody>
                 {% for course in ongoing_course %}
                   <tr>
-                    <td><a class="btn btn-primary rounded-pill py-1 px-3" href="{% url 'application' course.id %}">Enroll now</a></td>
+                    
+                    <td><a class="btn btn-primary rounded-pill py-1 px-3" href="{% url 'application' course.id %}">اشترك الآن</a></td>
                     <td><b>{{ course.age }}</b></td>
                     <td>{{ course.startDate|date:'d-M' }}</td>
                     <td>{{ course.WeekDay }}</td>
                     <td>{{ course.start_time }}</td>
                     <td>{{ course.location }}</td>
                     <td>{{ course.courseID.price }}</td>
-                    
-
                     
                   </tr>
                 {% endfor %}

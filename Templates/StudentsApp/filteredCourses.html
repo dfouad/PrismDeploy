@@ -32,7 +32,11 @@
                     {% endif %}
                   </div>
                 </div>
+                {% if course.id == 10 %}
+                <a class="bg-primary text-white rounded-pill py-2 px-3" href="{% url 'strong' %}">Details</a>
+                {% else %}
                 <a class="bg-primary text-white rounded-pill py-2 px-3" href="{% url 'courseDetails' course.id %}">Details</a>
+                {% endif %}
               </div>
               <div class="row g-1">
                 <div class="col-4">

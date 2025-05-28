@@ -82,3 +82,11 @@ def courseByCategory(request):
     html = render_to_string('StudentsApp/filteredCourses.html', {'coursesList':courses_by_category})
     print('html',html )
     return JsonResponse({'html':html})
+
+
+
+def strong(request):
+    strong_courses=Courses.objects.filter(category='Strong Mind')
+    ongoing_course=OngoingCourses.objects.filter(courseID=10)
+    context={'coursesList': strong_courses ,'ongoing_course':ongoing_course}
+    return render (request,'StudentsApp/strong.html',context)
